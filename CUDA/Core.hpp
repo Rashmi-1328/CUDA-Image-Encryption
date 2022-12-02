@@ -508,10 +508,10 @@ int Encrypt()
     reverseChangePropagation(pVec, dVec, reducedHash_ENC, Mode::ENC);
     timeSince(start, "Reverse Change Propagation");
 
-    if (PRINT_IMAGES == 1)
-    {
-        imshow("Encrypted Image", img);
-    }
+    // if (PRINT_IMAGES == 1)
+    // {
+    //     imshow("Encrypted Image", img);
+    // }
 
     // Calculate key size
     if (DEBUG_KEY == 1)
@@ -620,10 +620,10 @@ int Decrypt()
     imwrite(path.fn_img_dec, img);
 
     // Display result
-    if (PRINT_IMAGES == 1)
-    {
-        imshow("Decrypted Image", img);
-    }
+    // if (PRINT_IMAGES == 1)
+    // {
+    //     imshow("Decrypted Image", img);
+    // }
 
     return 0;
 }
